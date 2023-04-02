@@ -29,7 +29,7 @@ CREATE TABLE comments (
 );
  
 CREATE TABLE likes (
-    user_id INTEGER NOT NULL,
+    user_id INTEGER NOT NULL
     photo_id INTEGER NOT NULL,
     created_at TIMESTAMP DEFAULT NOW(),
     FOREIGN KEY(user_id) REFERENCES users(id),
